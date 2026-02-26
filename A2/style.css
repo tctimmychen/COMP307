@@ -1,0 +1,25 @@
+body {
+     margin: 0;
+     padding: 0;
+}
+
+.navbar {
+     padding-top: 0;
+     padding-bottom: 0;
+}
+
+.w-15 {
+     width: 15% !important;
+}
+
+@media (min-width: 768px) {
+     .w-md-10 {
+          width: 10% !important;
+     }
+}
+
+@media (min-width: 992px) {
+     .w.lg-5 {
+          width: 10% !important;
+     }
+}
