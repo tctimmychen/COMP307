@@ -12,14 +12,75 @@ body {
      width: 15% !important;
 }
 
-@media (min-width: 768px) {
-     .w-md-10 {
-          width: 10% !important;
+.navbar-nav.hover-highlight .nav-link {
+     border-radius: 10px;
+     transition: background-color 0.5s ease;
+}
+
+.hover-highlight .nav-link:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992) {
+     .hover-highlight .nav-link {
+          width: auto;
      }
 }
 
-@media (min-width: 992px) {
-     .w.lg-5 {
-          width: 10% !important;
+.navbar-nav.ms-auto .nav-link {
+     position: relative;
+}
+
+@media (max-width: 992) {
+     .naxbar-nav.ms.auto .nav-link {
+          width: auto;
      }
+}
+
+.navbar-nav.ms-auto .nav-link::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background-color: black;
+}
+
+.navbar-nav.ms-auto .nav-link:hover::after {
+     width: 100%;
+}
+
+
+.btn-custom {
+     background-color: #8cc451;
+     color: #212529;
+}
+
+.btn-custom:hover {
+     background-color: #6fa33e;
+     color: #212529;
+}
+
+.btn-custom:disabled,
+.btn-custom.disabled {
+     background-color: #8cc451;
+     opacity: 0.65;
+     pointer-events: none;
+}
+
+.carousel-item {
+     height: 500px;
+}
+
+.carousel-img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.carousel-caption {
+     background-color: rgba(0, 0, 0, 0.55);
+     padding: 20px;
+     border-radius: 10px;
 }
