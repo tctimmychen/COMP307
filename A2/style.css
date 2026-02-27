@@ -1,11 +1,25 @@
 body {
-     margin: 0;
+     margin-top: 0;
+     margin-bottom: 20px;
      padding: 0;
 }
 
+.divide-line {
+     width: 100%;
+     height: 15px;
+     background-color: #7662a1;
+     margin: 0;
+}
+
+/*styling for navbar*/
 .navbar {
-     padding-top: 0;
-     padding-bottom: 0;
+     padding-top: 5;
+     padding-bottom: 5;
+}
+
+.navbar-brand {
+     margin: 0;
+     padding: 0;
 }
 
 .w-15 {
@@ -14,11 +28,11 @@ body {
 
 .navbar-nav.hover-highlight .nav-link {
      border-radius: 10px;
-     transition: background-color 0.5s ease;
+     transition: background-color 0.4s ease;
 }
 
 .hover-highlight .nav-link:hover {
-     background-color: rgba(0, 0, 0, 0.2);
+     background-color: #7662a1;
 }
 
 @media (max-width: 992) {
@@ -44,7 +58,7 @@ body {
      left: 0;
      width: 0;
      height: 2px;
-     background-color: black;
+     background-color: #7662a1;
 }
 
 .navbar-nav.ms-auto .nav-link:hover::after {
@@ -69,6 +83,11 @@ body {
      pointer-events: none;
 }
 
+.carousel {
+     margin-bottom: 0;
+}
+
+/*styling for carousel*/
 .carousel-item {
      height: 500px;
 }
@@ -83,4 +102,38 @@ body {
      background-color: rgba(0, 0, 0, 0.55);
      padding: 20px;
      border-radius: 10px;
+}
+
+/*styling for hero cards*/
+.hero-card {
+     transition: transform 0.4s ease;
+     border: none;
+     overflow: hidden;
+}
+
+.hero-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-card .card-img-top {
+     width: 50%;
+     height: auto;
+     margin: auto;
+}
+
+.hero-card:has(button[aria-expanded="true"]) {
+     filter: brightness(0.8);
+     transition: filter 0.4s ease;
+}
+
+/*styling for row 4 accordion*/
+.accordion-collapse {
+     transition: height 0.4s ease;
+}
+
+.accordion-item {
+     font-size: 20px;
+     padding-left: 20px;
+     padding-right: 20px;
 }
