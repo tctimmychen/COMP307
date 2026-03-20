@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="form-validation.css">
+     <title>A3</title>
+</head>
+<body>
+     <!-- NAME: Timmy Chen-->
+     <!-- STUDENT ID: 261153472-->
+
+     <div class="container-fluid p-5">
+          <div class="row">
+               <!-- Left text portion of site-->
+               <div class="col-5">
+                    <h1>Contact Us!</h1><br>
+                    <p class="lead pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p><br>
+                    <p class="lead pe-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+               </div>
+               <!--Empty col for spacing-->
+               <div class="col-1"></div>
+               <!-- Right form portion of site-->
+               <div class="col-6">
+                    <form class="needs-validation" action="A3.php" method="post" id="form" novalidate>
+                         <div class="row mt-4 mb-3">
+                              <div class="col-6">
+                                   <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name" required>
+                                   <div class="invalid-feedback">First Name is required.</div>
+                              </div>
+                              <div class="col-6">
+                                   <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" required>
+                                   <div class="invalid-feedback">Last Name is required.</div>
+                              </div>
+                         </div>
+                         <div class="mb-3">
+                              <input class="form-control" type="text" id="email" name="email" placeholder="Email" required>
+                              <div class="invalid-feedback">Email is required.</div>
+                         </div>
+                         <div class="mb-3">
+                              <input class="form-control" type="text" id="phonenum" name="phonenum" placeholder="Phone Number" required>
+                              <div class="invalid-feedback">Phone Number is required.</div>
+                         </div>
+                         <div class="mb-3">
+                              <select class="form-select" id="topic" name="topic" required>
+                                   <option value="" disabled selected>Select Your Topic</option>
+                                   <option>Topic 1</option>
+                                   <option>Topic 2</option>
+                                   <option>Topic 3</option>
+                              </select>
+                              <div class="invalid-feedback">Topic is required.</div>
+                         </div>
+                         <div class="mb-3"><input class="form-control" type="text" id="ordernum" name="ordernum" placeholder="Order Number (optional)"></div>
+                         <div class="mb-3"><input class="form-control" type="text" id="salon" name="salon" placeholder="Salon Name (if applicable)"></div>
+                         <div class="mb-3">
+                              <input class="form-control" type="text" id="msg" name="msg" placeholder="Message" required>
+                              <div class="invalid-feedback">Message is required.</div>
+                         </div>
+                         <button class="btn btn-dark btn-block" type="submit">Submit</button>
+                         <div class="invalid-feedback">You are missing required fields. Please complete all required fields to submit.</div>
+                    </form>
+               </div>
+          </div>
+     </div>
+
+     <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+     <script src="A3.js"></script>
+</body>
+</html>
